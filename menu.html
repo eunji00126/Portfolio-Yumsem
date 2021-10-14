@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- header 영역 시작 -->
+    <header id="header">
+        <!-- header mobile 영역 시작 -->
+        <nav id="mobile_menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li>
+                    <a class="menu-link" href="info.html" title="얌샘스토리">얌샘스토리</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="menu.html" title="얌샘메뉴">얌샘메뉴</a>
+                </li>
+                <li>
+                    <a href="#" title="매장안내">매장안내</a>
+                </li>
+                <li>
+                    <a href="#" title="얌샘소식">얌샘소식</a>
+                </li>
+                <li>
+                    <a href="#" title="회사소개">회사소개</a>
+                </li>
+                <li>
+                    <a href="#" title="창업경쟁력">창업경쟁력</a>
+                </li>
+            </ul>
+           </nav>
+        <div class="menu_container_mobile mo_con">
+           <a href="javascript:void(0)" onclick="openNav()" class="mo_click">
+            <img src="images/btn_m_list.png" alt=""></a>
+            <a href="./index.html" class="mo_logo"><img src="images/logo_mobile.png" alt=""></a>
+        <div id="swiper-mobile" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <a href="info.html">얌샘스토리</a>
+            </div>
+            <div class="swiper-slide">
+                <a href="menu.html">얌샘메뉴</a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">매장안내</a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">얌샘소식</a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">회사소개</a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">창업경쟁력</a>
+            </div>
+        </div>
+     </div>
+        </div>
+        <!-- header mobile 영역 끝 -->
+
+    <section class="header_wrap">
+    <div class="menu_container">
+            <div id="logoEffect" class="logo_desk">
+                <a href="index.html"><div class="effectData" style="visibility: visible;">
+                    <p class="line line01" style="transform: matrix(1, 0, 0, 1, 0, 0); height: 4px; width: 20px;"><span class="bar"></span><span class="txt"><img src="images/logo_txt01_01.png" alt="" class="top" style="opacity: 1;"><img src="images/logo_txt01_02.png" alt="" class="bottom" style="opacity: 1;"></span></p>
+                    <p class="line line02" style="transform: matrix(1, 0, 0, 1, 0, 0); height: 38px; width: 4px;"><span class="bar"></span><span class="txt"><img src="images/logo_txt02_01.png" alt="" class="top" style="opacity: 1;"><img src="images/logo_txt02_02.png" alt="" class="bottom" style="opacity: 1;"></span></p>
+                    <p class="line line03" style="transform: matrix(1, 0, 0, 1, 0, 0); height: 29px; width: 4px;"><span class="bar"></span><span class="txt"><img src="images/logo_txt03_01.png" alt="" class="top" style="opacity: 1;"><img src="images/logo_txt03_02.png" alt="" class="bottom" style="opacity: 1;"></span></p>
+                    <p class="line line04" style="transform: matrix(1, 0, 0, 1, 0, 0); height: 4px; width: 23px;"><span class="bar"></span><span class="txt"><img src="images/logo_txt04_01.png" alt="" class="top" style="opacity: 1;"><img src="images/logo_txt04_02.png" alt="" class="bottom" style="opacity: 1;"></span></p>
+                </a>
+                </div>
+                <div class="none"><img src="images/logo.gif"></div>
+            </div>
+            <nav id="menu" class="overlay">
+                <ul>
+                    <li>
+                        <a class="menu-link" href="info.html" title="얌샘스토리">얌샘스토리</a>
+                    </li>
+                    <li>
+                        <a class="menu-link" href="menu.html" title="얌샘메뉴">얌샘메뉴</a>
+                    </li>
+                    <li>
+                        <a href="#" title="매장안내">매장안내</a>
+                    </li>
+                    <li>
+                        <a href="#" title="얌샘소식">얌샘소식</a>
+                    </li>
+                    <li>
+                        <a href="#" title="회사소개">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="#" title="창업경쟁력">창업경쟁력</a>
+                    </li>
+                </ul>
+               </nav>
+               <a href="#"><img src="images/btn_kr.gif" alt=""></a>
+        </div>
+        </section>
+    </header>
+    <!-- header 영역 끝 -->
+
+    <!-- sub header fixed 영역 시작 -->
+        <article id="info_icon">
+            <ul>
+                <li class="icon">
+                    <a href="#"><img src="images/quick_icon01.png" alt=""></a>
+                </li>
+                <li class="icon">
+                    <a href="#"><img src="images/quick_icon02.png" alt=""></a>
+                    <p class="info"><img src="images/quick_cscenter.png" alt=""></p>
+                </li>
+                <li class="icon">
+                    <a href="#"><img src="images/quick_icon03.png" alt=""></a>
+                    <p class="info"><img src="images/quick_tel.png" alt=""></p>
+                </li>
+                <li class="icon">
+                    <a href="#"><img src="images/quick_icon04.png" alt=""></a>
+                    <p class="info"><img src="images/service_tel.png" alt=""></p>
+                </li>
+            </ul>
+        </article>
+         <!-- sub header fixed 영역 끝 -->
+
+          <!-- menu page 영역 시작 -->
+        <!-- menu section-1 영역 시작 -->
+    <section class="menu_container1">
+        <div class="menu_wrap">
+            <div class="menu_txtwrap">
+                <h1>얌샘메뉴</h1>
+                <span>얌샘 신메뉴로 일상의 행복을 채우세요</span>
+                </div>
+                <div class="tab_container">
+                    <div class="tab_wrap">
+                    <ul class="menu_tab">
+                        <li id="home" class="tab-act active"><a href="#section1">입안가득김밥</a></li>
+                        <li id="about" class="tab-act"><a href="#section2">한입에쏙 한입김밥</a></li>
+                        <li id="skill" class="tab-act"><a href="#section3">인기만점식사</a></li>
+                        <li id="work" class="tab-act"><a href="#section4">취향저격분식</a></li>
+                    </ul> 
+                </div>
+                </div>
+                <p>이전메뉴보기</p>
+                </div>
+    </section>
+    <!-- menu section-1 영역 끝 -->
+    
+    <!-- menu section-2 영역 시작 -->
+    <section class="page menu_container2" id="menuSec menuMov">
+        <div id="container" class="menu_sub_container list_box img_type ul">
+            <h3 id="section1"><img src="images/menu_title02.gif" alt=""></h3>
+            <div class="menu_images"> 
+        <ul id="ju_menu-ul">
+            <li id="ju_menu-li" class="sa sa-up" data-sa-delay="200">
+                <div class="badge_container">
+                    <div class="badge">Best</div>
+            </div>
+                <img src="menu_images/img1.jpg" alt="">
+                <div class="menu-text">
+                    <p>얌샘김밥</p></div>
+                </li>
+                <li id="ju_menu-li" class="sa sa-up" data-sa-delay="300">
+                    <img src="menu_images/img2.jpg" alt="">
+                    <div class="menu-text">
+                        <p>소세지김밥</p></div>
+                    </li>
+                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="400">
+                        <img src="menu_images/img3.jpg" alt="">
+                        <div class="menu-text">
+                            <p>치즈김밥</p></div>
+                        </li>
+                            <li id="ju_menu-li" class="sa sa-up" data-sa-delay="500">
+                                <div class="badge_container">
+                                    <div class="badge">Best</div>
+                                </div>
+                                <img src="menu_images/img4.jpg" alt="">
+                                <div class="menu-text">
+                                    <p>불어묵김밥</p></div>
+                                </li>
+                                <li id="ju_menu-li" class="sa sa-up" data-sa-delay="600">
+                                    <img src="menu_images/img5.jpg" alt="">
+                                    <div class="menu-text">
+                                        <p>참치샐러드김밥</p></div>
+                                    </li>
+                                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="700">
+                                        <img src="menu_images/img1.jpg" alt="">
+                                        <div class="menu-text">
+                                            <p>진미채오징어김밥</p></div>
+                                        </li>
+        </ul>
+        <ul id="ju_menu-ul">
+            <li id="ju_menu-li" class="sa sa-up" data-sa-delay="800">
+                <div class="badge_container">
+                    <div class="badge">Best</div>
+                </div>
+                <img src="menu_images/row1.jpg" alt="">
+                <div class="menu-text">
+                    <p>날치알톡톡김밥</p></div>
+                </li>
+                <li id="ju_menu-li" class="sa sa-up" data-sa-delay="900">
+                    <img src="menu_images/row2.jpg" alt="">
+                    <div class="menu-text">
+                        <p>돈까스김밥</p></div>
+                    </li>
+                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="1000">
+                        <img src="menu_images/row3.jpg" alt="">
+                        <div class="menu-text">
+                            <p>메가김밥</p></div>
+                        </li>
+                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="1200">
+                            <img src="menu_images/row4.jpg" alt="">
+                            <div class="menu-text">
+                                <p>원조김밥</p></div>
+                            </li>
+                            <li id="ju_menu-li" class="sa sa-up" data-sa-delay="1400">
+                                <img src="menu_images/row5.jpg" alt="">
+                                <div class="menu-text">
+                                    <p>날치알크랩김밥</p></div>
+                                </li>
+        </ul>
+            </div>
+        </div>
+    </section>
+    <!-- menu section-2 영역 시작 -->
+
+    <!-- menu section-3 영역 시작 -->
+    <section class="page menu_container3" id="menuSec menuMov">
+        <div id="container" class="menu_sub_container">
+           <h3 id="section2"><img src="images/menu_title03.gif" alt=""></h3> 
+            <div class="menu_images">
+                <ul id="ju_menu-ul">
+                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="200">
+                        <img src="menu_images/img3row1.jpg" alt="">
+                        <div class="menu-text">
+                            <p>한입에 계란</p></div>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- menu section-3 영역 끝 -->
+
+    <!-- menu section-4 영역 시작 -->
+    <section class="page menu_container4" id="menuSec menuMov">
+        <div id="container" class="menu_sub_container">
+            <h3 id="section3"><img src="images/menu_title05.gif" alt=""></h3>
+            <div class="menu_images">
+                <ul id="ju_menu-ul">
+                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="200">
+                        <img src="menu_images/img4row1.jpg" alt="">
+                        <div class="menu-text">
+                            <p>콩나물국밥</p></div>
+                        </li>
+                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="300">
+                            <img src="menu_images/img4row2.jpg" alt="">
+                            <div class="menu-text">
+                                <p>스팸부대찌개</p></div>
+                            </li>
+                            <li id="ju_menu-li" class="sa sa-up" data-sa-delay="400">
+                                <img src="menu_images/img4row3.jpg" alt="">
+                                <div class="menu-text">
+                                    <p>생등심돈까스</p></div>
+                                </li>
+                                <li id="ju_menu-li" class="sa sa-up" data-sa-delay="500">
+                                    <div class="badge_container">
+                                        <div class="badge">Best</div>
+                                    </div>
+                                    <img src="menu_images/img4row4.jpg" alt="">
+                                    
+                                    <div class="menu-text">
+                                        <p>치즈돈까스</p></div>
+                                    </li>
+                                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="600">
+                                        <img src="menu_images/img4row5.jpg" alt="">
+                                        <div class="menu-text">
+                                            <p>함박스테이크</p></div>
+                                        </li>
+                                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="700">
+                                            <img src="menu_images/img4row6.jpg" alt="">
+                                            <div class="menu-text">
+                                                <p>오므라이스</p></div>
+                                            </li>
+                </ul>
+                <ul id="ju_menu-ul">
+                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="200">
+                        <img src="menu_images/img5row1.jpg" alt="">
+                        <div class="menu-text">
+                            <p>김치찌개와 비빔밥</p></div>
+                        </li>
+                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="300">
+                            <div class="badge_container">
+                                <div class="badge">Best</div>
+                            </div>
+                            <img src="menu_images/img5row2.jpg" alt="">
+                            <div class="menu-text">
+                                <p>순두부찌개와 비빔밥</p></div>
+                            </li>
+                            <li id="ju_menu-li" class="sa sa-up" data-sa-delay="400">
+                                <div class="badge_container">
+                                    <div class="badge">Best</div>
+                                </div>
+                                <img src="menu_images/img5row3.jpg" alt="">
+                                <div class="menu-text">
+                                    <p>차돌된장찌개와 비빔밥</p></div>
+                                </li>
+                                <li id="ju_menu-li" class="sa sa-up" data-sa-delay="500">
+                                    <img src="menu_images/img5row4.jpg" alt="">
+                                    <div class="menu-text">
+                                        <p>돈까스김치찌개</p></div>
+                                    </li>
+                                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="600">
+                                        <img src="menu_images/img5row5.jpg" alt="">
+                                        <div class="menu-text">
+                                            <p>참치알밥</p></div>
+                                        </li>
+                                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="700">
+                                            <img src="menu_images/img5row6.jpg" alt="">
+                                            <div class="menu-text">
+                                                <p>커리오므라이스</p></div>
+                                            </li>
+                </ul>
+                <ul id="ju_menu-ul">
+                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="200">
+                        <div class="badge_container">
+                            <div class="badge">Best</div>
+                        </div>
+                        <img src="menu_images/img6row1.jpg" alt="">
+                        <div class="menu-text">
+                            <p>돈까스 김치오므라이스</p></div>
+                        </li>
+                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="300">
+                            <img src="menu_images/img6row2.jpg" alt="">
+                            <div class="menu-text">
+                                <p>스팸김치볶음밥</p></div>
+                            </li>
+                            <li id="ju_menu-li" class="sa sa-up" data-sa-delay="400">
+                                <img src="menu_images/img6row3.jpg" alt="">
+                                <div class="menu-text">
+                                    <p>게살듬뿍볶음밥</p></div>
+                                </li>
+                                <li id="ju_menu-li" class="sa sa-up" data-sa-delay="500">
+                                    <img src="menu_images/img6row4.jpg" alt="">
+                                    <div class="menu-text">
+                                        <p>스팸계란덮밥</p></div>
+                                    </li>
+                                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="600">
+                                        <img src="menu_images/img6row5.jpg" alt="">
+                                        <div class="menu-text">
+                                            <p>장조림버터비빔밥</p></div>
+                                        </li>
+                                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="700">
+                                            <div class="badge_container">
+                                                <div class="badge">Best</div>
+                                            </div>
+                                            <img src="menu_images/img6row6.jpg" alt="">
+                                            <div class="menu-text">
+                                                <p>제육덮밥</p></div>
+                                            </li>
+                </ul>
+                <ul id="ju_menu-ul">
+                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="200">
+                        <img src="menu_images/img7row1.jpg" alt="">
+                        <div class="menu-text">
+                            <p>낙지알밥</p></div>
+                        </li>
+                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="300">
+                            <img src="menu_images/img7row2.jpg" alt="">
+                            <div class="menu-text">
+                                <p>바싹불고기덮밥</p></div>
+                            </li>
+                            <li id="ju_menu-li" class="sa sa-up" data-sa-delay="400">
+                                <img src="menu_images/img7row3.jpg" alt="">
+                                <div class="menu-text">
+                                    <p>돈까스카레덮밥</p></div>
+                                </li>
+                                <li id="ju_menu-li" class="sa sa-up" data-sa-delay="500">
+                                    <img src="menu_images/img7row4.jpg" alt="">
+                                    <div class="menu-text">
+                                        <p>버섯육개장</p></div>
+                                    </li>
+                                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="600">
+                                        <img src="menu_images/img7row5.jpg" alt="">
+                                        <div class="menu-text">
+                                            <p>대만식불고기덮밥</p></div>
+                                        </li>
+                                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="700">
+                                            <img src="menu_images/img7row6.jpg" alt="">
+                                            <div class="menu-text">
+                                                <p>해물순두부짬뽕</p></div>
+                                            </li>
+                </ul> 
+            </div>
+        </div>
+    </section>
+    <!-- menu section-4 영역 끝 -->
+
+    <!-- menu section-5 영역 시작 -->
+    <section class="page menu_container5" id="menuSec menuMov">
+        <div id="container" class="menu_sub_container">
+            <h3 id="section4"><img src="images/menu_title06.gif" alt=""></h3>
+            <div class="menu_images">
+                <ul id="ju_menu-ul">
+                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="200">
+                        <div class="badge_container">
+                            <div class="badge">Best</div>
+                        </div>
+                        <img src="menu_images/img8row1.jpg" alt="">
+                        <div class="menu-text">
+                            <p>모다기</p></div>
+                        </li>
+                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="300">
+                            <div class="badge_container">
+                                <div class="badge">Best</div>
+                            </div>
+                            <img src="menu_images/img8row2.jpg" alt="">
+                            <div class="menu-text">
+                                <p>라돈모다기</p></div>
+                            </li>
+                            <li id="ju_menu-li" class="sa sa-up" data-sa-delay="400">
+                                <img src="menu_images/img8row3.jpg" alt="">
+                                <div class="menu-text">
+                                    <p>비빔모다기</p></div>
+                                </li>
+                                <li id="ju_menu-li" class="sa sa-up" data-sa-delay="500">
+                                    <img src="menu_images/img8row4.jpg" alt="">
+                                    <div class="menu-text">
+                                        <p>제육쌈모다기</p></div>
+                                    </li>
+                                      <li id="ju_menu-li" class="sa sa-up" data-sa-delay="600">
+                        <img src="menu_images/img8row5.jpg" alt="">
+                        <div class="menu-text">
+                            <p>얌샘라면</p></div>
+                        </li>
+                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="700">
+                            <img src="menu_images/img8row6.jpg" alt="">
+                            <div class="menu-text">
+                                <p>치즈라면</p></div>
+                            </li>
+                </ul> 
+                <ul id="ju_menu-ul">
+                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="200">
+                        <img src="menu_images/img9row1.jpg" alt="">
+                        <div class="menu-text">
+                            <p>떡볶이</p></div>
+                        </li>
+                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="300">
+                            <img src="menu_images/img9row2.jpg" alt="">
+                            <div class="menu-text">
+                                <p>라볶이</p></div>
+                            </li>
+                            <li id="ju_menu-li" class="sa sa-up" data-sa-delay="400">
+                                <img src="menu_images/img9row3.jpg" alt="">
+                                <div class="menu-text">
+                                    <p>유부우동</p></div>
+                                </li>
+                                <li id="ju_menu-li" class="sa sa-up" data-sa-delay="500">
+                                    <img src="menu_images/img9row4.jpg" alt="">
+                                    <div class="menu-text">
+                                        <p>잔치국수</p></div>
+                                    </li>
+                                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="600">
+                                        <img src="menu_images/img9row5.jpg" alt="">
+                                        <div class="menu-text">
+                                            <p>비빔쫄면</p></div>
+                                        </li>
+                                         <li id="ju_menu-li" class="sa sa-up" data-sa-delay="700">
+                                            <div class="badge_container">
+                                                <div class="badge">Best</div>
+                                            </div>
+                        <img src="menu_images/img9row6.jpg" alt="">
+                        <div class="menu-text">
+                            <p>물쫄면</p></div>
+                        </li>
+                </ul>
+                <ul id="ju_menu-ul">
+                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="200">
+                            <img src="menu_images/img10row1.jpg" alt="">
+                            <div class="menu-text">
+                                <p>물냉면(계절메뉴)</p></div>
+                            </li>
+                            <li id="ju_menu-li" class="sa sa-up" data-sa-delay="300">
+                                <img src="menu_images/img10row2.jpg" alt="">
+                                <div class="menu-text">
+                                    <p>비빔냉면(계절메뉴)</p></div>
+                                </li>
+                                <li id="ju_menu-li" class="sa sa-up" data-sa-delay="400">
+                                    <img src="menu_images/img10row3.jpg" alt="">
+                                    <div class="menu-text">
+                                        <p>콩국수(계절메뉴)</p></div>
+                                    </li>
+                                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="500">
+                                        <img src="menu_images/img10row4.jpg" alt="">
+                                        <div class="menu-text">
+                                            <p>냉모밀(계절메뉴)</p></div>
+                                        </li>
+                                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="600">
+                                            <img src="menu_images/img10row5.jpg" alt="">
+                                            <div class="menu-text">
+                                                <p>떡만둣국(계절메뉴)</p></div>
+                                            </li>
+                                            <li id="ju_menu-li" class="sa sa-up" data-sa-delay="700">
+                                                <img src="menu_images/img11row1.jpg" alt="">
+                                                <div class="menu-text">
+                                                    <p>어묵탕(사이드메뉴)</p></div>
+                                                </li>
+                </ul> 
+                <ul id="ju_menu-ul">        
+                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="200">
+                            <img src="menu_images/img11row2.jpg" alt="">
+                            <div class="menu-text">
+                                <p>미니탕수육(사이드메뉴)</p></div>
+                            </li>
+                            <li id="ju_menu-li" class="sa sa-up" data-sa-delay="300">
+                                <img src="menu_images/img11row3.jpg" alt="">
+                                <div class="menu-text">
+                                    <p>모둠튀김(사이드메뉴)</p></div>
+                                </li>
+                                <li id="ju_menu-li" class="sa sa-up" data-sa-delay="400">
+                                    <img src="menu_images/img11row4.jpg" alt="">
+                                    <div class="menu-text">
+                                        <p>얌샘감자(사이드메뉴)</p></div>
+                                    </li>
+                                    <li id="ju_menu-li" class="sa sa-up" data-sa-delay="500">
+                        <img src="menu_images/img11row1.jpg" alt="">
+                        <div class="menu-text">
+                            <p>대만식땅콩비빔면</p></div>
+                        </li>
+                        <li id="ju_menu-li" class="sa sa-up" data-sa-delay="600">
+                            <img src="menu_images/img11row1.jpg" alt="">
+                            <div class="menu-text">
+                                <p>대만식새우완탕면</p></div>
+                            </li>
+                </ul>  
+            </div> 
+        </div>
+    </section>
+    <!-- menu section-5 영역 끝 -->
+
+     <!-- menu page 영역 끝 -->
+
+      <!-- footer 영역 시작 -->
+    <footer id="footer">
+        <h2>
+            <img src="images/footer_logo.gif" alt="">
+        </h2>
+        <address>
+            (주)얌샘 서울시 영등포구 영등포로 347(한독타워) 9,10F Tel: +82.2.1644.3378 FAX: 3667.3379<br>
+        <span>대표이사: 김은광 사업자등록번호: 107-86-81841 admin@yumsem.com<br>
+            Copyright(C) 2003 YUMSEM, All Rights Reserved</span>
+    </address>
+    <div class="certification_list">
+        <ul>
+            <li>
+                <div>
+                    <img src="images/certification_mark03.gif" alt="">
+                <span>2016 여성가족부 주관<br>
+                    가족친화우수기업 인증</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/certification_mark05.gif" alt="">
+                
+                <span>2018 매일경제선정<br>
+                    100대 프랜차이즈</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/certification_mark02.gif" alt="">
+               
+                <span>2017 산업통상자원부<br>
+                    우수프랜차이즈 선정</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/certification_mark01.gif" alt="">
+                
+                <span>2016 산업통상자원부<br>
+                    세계일류상품 선정</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/certification_mark04.gif" alt="">
+                
+                <span>2016 중소기업청 기술혁신형<br>
+                    중소기업 INNO-BIZ 인증</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </footer>
+    <!-- footer 영역 끝 -->
+    <script>
+        	
+		function openNav(){
+            
+            document.getElementById("mobile_menu").style.height="100%";
+            }  
+        function closeNav(){
+            document.getElementById("mobile_menu").style.height="0";
+        }
+    </script>
+</body>
+</html>
