@@ -447,49 +447,8 @@
     <!-- footer 영역 끝 -->
   
     <script>
-        	$(function(){
-			var activeClass = 'active_slide';
-			var mainSlide = $('.main_slide').bxSlider({
-			speed: 500,       
-			moveSlides: 1,     
-			slideWidth:1920,     
-			slideHeight:920, 
-			minSlides:1,     
-			maxSlides: 1,    
-			nextSelector:'.slider-next',
-			prevSelector:'.slider-prev',
-			pager:true,
-			pagerCustom: '#bx-pager',
-			auto: true,       
-			autoHover: true,   
-			controls: false,   
-			responsive:true,
-            nextText: 'next', // 다음 버튼 요소에 텍스트 삽입 prevText: 'prev', // 이전 버튼 요소에 텍스트 삽입
-            prevText: 'prev', // 이전 버튼 요소에 텍스트 삽입
-			onSliderLoad:function(){// 텍스트 애니메이션-1
-				//mainSlider.children('li').eq(1).addClass(activeClass);
-                $('.main_slide>li').eq(1).addClass(activeClass)
-			},
-			onSlideAfter:function($slideElement, oldIndex, newIndex){//텍스트 애니메이션-2(각 섹션별 텍스트 인수들)
-				//mainSlider.children('li').removeClass(activeClass).eq(newIndex +1).addClass(activeClass);
-                $('.active_slide').removeClass(activeClass);
-                $('.main_slide>li').eq(newIndex + 1).addClass(activeClass)
-			}
-		});   
-		// 슬라이드 버튼 클릭시 슬라이드 발생
-		$('.prev').on("click",function(){
-			mainSlide.goToPrevSlide();
-			return false;
-		});
 
-		$('.next').on("click",function(){
-			mainSlide.goToNextSlide();
-			return false;
-		});
-
-	});
-
-		function openNav(){
+	function openNav(){
             document.getElementById("mobile_menu").style.height="100%";
             }  
         function closeNav(){
